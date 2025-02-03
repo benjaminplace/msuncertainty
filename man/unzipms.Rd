@@ -4,12 +4,14 @@
 \alias{unzipms}
 \title{Unzip mzML mass spectra}
 \usage{
-unzipms(binary, compression = "none")
+unzipms(binary, compression = "none", size = 8)
 }
 \arguments{
 \item{binary}{character string representing}
 
-\item{compression}{}
+\item{compression}{character listing the type of compression used ("none" or "gzip")}
+
+\item{size}{integer float size (4 or 8)}
 }
 \value{
 double vector containing unzipped MS data. If binary is empty, returns NULL.
